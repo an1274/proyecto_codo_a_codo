@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador front | Andrea Leal Denis</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header_navegador">
+            <div class="header_contenedorLogo">
+                <a class="header_contenedorLogo_anclaLogo" href="#">
+                    <img class="header_contenedorLogo_anclaLogo_img" src="./assets/img/codoacodo.png" alt="Logo Codo a Codo 4.0" loading="lazy" >
+                </a>
+                <h2 class="header_contenedorLogo">Conf Bs As</h2>
+            </div>
+            <div>
+                <nav class="header_nav">
+                    <ul class="header_nav_ul">
+                        <li class="header_nav_ul_li"><a class="header_nav_ul_li_a itemBlanco" href="#conferencia">La conferencia</a></li>
+                        <li class="header_nav_ul_li"><a class="header_nav_ul_li_a itemGris" href="#oradores">Los oradores</a></li>
+                        <li class="header_nav_ul_li"><a class="header_nav_ul_li_a itemGris" href="#lugarFecha">El lugar y la fecha</a></li>
+                        <li class="header_nav_ul_li"><a class="header_nav_ul_li_a itemGris" href="#formularioOrador">Conviértete en orador</a></li>
+                        <li class="header_nav_ul_li"><a class="header_nav_ul_li_a itemVerde" href="./pages/tickets.html">Comprar tickets</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <section class="header_section">
+            <div class="header_section_div">
+                <h1 class="itemBlanco">Conf Bs As</h1>
+                <p class="header_section_parrafo">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+                <div class="cajaConferencia">
+                    <div class="botones_cajaConferencia">
+                        <a class="orador padOrador" href="#formularioOrador">Quiero ser orador</a>
+                        <a class="tickets" href="./pages/tickets.html">Comprar tickets</a>
+                    </div>
+                </div>    
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main_oradores">
+            <div class="main_oradores_div">
+                <h2><div class="main_oradores_tituloPequeño">CONOCE A LOS</div>ORADORES</h2>
+            </div>
+            <div class="main_oradores_cards">
+                <div class="cards"><img src="./assets/img/Steve_Jobs.jpg" alt="Foto Steve Jobs" loading="lazy">
+                    <div class="botonesOradores">
+                        <a class="botonJavascript" href="https://aprendejavascript.org/" target="_blank">JavaScript</a>
+                        <a class="botonReact" href="https://es.react.dev/" target="_blank">React</a>
+                    </div>    
+                    <div class="descripcionOradores">  
+                        <h3>Steve Jobs</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit illo nam, animi necessitatibus quia nemo officia distinctio quas dolores aperiam, similique doloribus sit perspiciatis a impedit ullam quo provident sapiente!
+                        </p>
+                    </div>
+                </div>
+                <div class="cards"><img src="./assets/img/bill.jpg" alt="Foto Bill Gates" loading="lazy">
+                    <div class="botonesOradores">
+                        <a class="botonJavascript" href="https://aprendejavascript.org/" target="_blank">JavaScript</a>
+                        <a class="botonReact" href="https://es.react.dev/" target="_blank">React</a>
+                    </div>
+                    <div class="descripcionOradores">   
+                        <h3>Bill Gates</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat iure perspiciatis saepe a. Rerum, rem veritatis nemo, necessitatibus molestias hic nulla distinctio labore dolorum iure tenetur inventore tempore non quod!
+                        </p>
+                    </div>    
+                </div>
+                <div class="cards"><img src="./assets/img/ada.jpeg" alt="Foto Ada Lovelace" loading="lazy">
+                    <div class="botonesOradores">
+                        <a class="botonNegocios" href="#">Negocios</a>
+                        <a class="botonStartup" href="#" >Startups</a>
+                    </div>
+                    <div class="descripcionOradores">
+                        <h3>Ada Lovelace</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, reiciendis! Adipisci reiciendis ipsum incidunt dolorem! Delectus quas, similique aliquid vel velit ab nam laborum aut enim culpa ex cum. Facere.
+                        </p>
+                    </div>    
+                </div>
+            </div>
+        </section>
+        <section class="main_sectionPrincipal">
+            <div class="main_sectionPrincipal_contenedorFlexible">
+                <div class="main_sectionPrincipal_contenedorFlexible_contenedorImg">  
+                     
+                </div>                               
+                <div class="main_sectionPrincipal_contenedorTexto itemBlanco">
+                    <h2>Bs As - Octubre</h2>
+                    <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                    <a class="itemBlanco" href="">Conocé más</a>
+                </div>
+            </div>  
+        </section>
+        <section id="formularioOrador">
+            <div class="contenedorFlex_formulario">
+                <div class="formulario_titulo">
+                    <h2><div class="formularioOrador_tituloPequeño"> CONVIÉRTETE EN UN</div>ORADOR</h2>
+                    <p>Anótate como orador para dar una <span class="subrayadoPuntitos">charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+                </div>
+                <div class="formularioInput">
+                    <form class="cajaForm" action="">
+                        <div class="inputName">
+                            <input type="text" id="name" name="nombre" placeholder="Nombre" required>                                
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        </div>    
+                        <div class="text_area">
+                            <textarea name="comentario" id="comentario" cols="60" rows="25" placeholder="Sobre qué quieres hablar?"></textarea>
+                        </div>
+                            <p class="parrafoForm">Recuerda incluir un título para tu charla</p>
+                            <div class="submit">
+                                <input type="submit" value="Enviar">                              
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer_nav">
+            <ul class="footer_nav_ul">
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Contáctanos</a>
+                </li>
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Prensa</a>
+                </li>
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Conferencias</a>
+                </li>
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Términos y condiciones</a>
+                </li>
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Privacidad</a>
+                </li>
+                <li class="footer_nav_ul_li">
+                    <a class="footer_nav_ul_li_a" href="#">Estudiantes</a>
+                </li>                      
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

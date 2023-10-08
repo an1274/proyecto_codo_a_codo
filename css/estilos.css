@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 1px;
+}
+.itemBlanco{
+    color: rgb(246, 247, 242);
+}
+.itemGris{
+    color: rgb(149, 152, 159);
+}
+.itemVerde{
+    color: rgb(39, 167, 70);
+}
+.header_navegador{
+    padding: 1% 7% 1% 1%;
+    background-color: rgb(60, 65, 71);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header_contenedorLogo{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_contenedorLogo_anclaLogo{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header_contenedorLogo_anclaLogo_img{
+    width: 100%;
+    height: 10vh;
+}
+.header_contenedorLogo h2{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header_nav{
+    display: flex;
+}
+.header_nav_ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.header_nav_ul_li{
+    padding-right: 20px;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header_nav_ul_li_a{
+    text-decoration: none;
+}
+.header_section{
+    height: 80vh;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right top, #00000080, #00000080), url(../assets/img/ba1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: right;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.header_section_div{
+    padding-top: 15% ;
+    margin-right: 8%;
+    margin-left: 50%;
+}
+.header_section_parrafo{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: justify right;
+    line-height: 1.6;    
+}
+.header_section_div h1{
+    font-size: 2.5rem;
+}
+.cajaConferencia{
+    width: 100%;
+    height: 10vh;
+    padding-top: 2%;
+}
+.botones_cajaConferencia{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.orador{
+    padding: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.774);
+    border-radius: 5px
+}
+.padOrador{
+    margin-left: 43%;
+}
+.tickets{
+    padding: 2%;
+    background-color: rgb(41, 167, 68);
+    border-radius: 5px;
+}
+.header_section a{
+    text-decoration: none;
+    color: white;
+}
+.main_oradores_div{
+   text-align: center;
+   margin-top: 10px ;
+   margin-bottom: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main_oradores h2{
+    font-size: 2.3rem;
+}
+.main_oradores_tituloPequeño{
+    padding-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.main_oradores_cards{
+    height: 100%;
+    display: flex;
+    flex-direction: row;    
+    flex-wrap:wrap;
+    align-content: center;
+    gap:40px;
+    justify-content: center;    
+    padding-bottom: 40px;    
+}
+.cards{    
+    background-color: rgb(252, 252, 252);
+    border: 1px solid rgb(190, 182, 182);
+    width: 23%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;    
+}
+.cards img{
+    width: 100%;
+    height: 58%;
+    object-fit:cover;
+}
+.botonesOradores{
+    padding: 5%;
+    padding-top: 8%;
+    padding-bottom: 1%;    
+}
+.botonesOradores a{
+    text-decoration: none;
+    padding: 2.5px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+.botonJavascript{
+    background-color: rgb(254, 193, 6) ;
+    color: black;
+}
+.botonReact{
+    background-color: rgb(23, 162, 185);
+    color: white;
+}
+.botonNegocios{
+    background-color: rgb(108, 117, 124);
+    color: white;
+}
+.botonStartup{
+    background-color: rgb(220, 54, 68);
+    color: white;
+}
+.descripcionOradores{    
+    padding: 0 2% 5% 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.descripcionOradores h3{
+    font-size: 1.3rem;
+    padding-bottom: 4%;
+}
+.descripcionOradores p{
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify center;
+}
+.main_sectionPrincipal_contenedorFlexible{
+    height: 60vh;
+    background-color: #1d5271;
+    display: flex;
+    flex-direction: row
+}
+.main_sectionPrincipal_contenedorFlexible_contenedorImg{
+    width: 50%;
+    height: 60vh;
+    background-image: url(../assets/img/honolulu.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+}
+.main_sectionPrincipal_contenedorTexto{
+    background-color: rgb(53, 58, 64);
+    width: 50%;
+    height: 60vh;
+    padding-top: 1%;
+    padding-left: 1%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start; 
+    line-height: 1.5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0.1px solid white;
+}
+.main_sectionPrincipal_contenedorTexto h2{    
+    padding-bottom: 2%;
+    font-size: 2rem;    
+    margin-top: 2.5px;    
+}
+.main_sectionPrincipal_contenedorTexto p{
+    padding-right: 1%;
+    padding-bottom: 2%;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+.main_sectionPrincipal_contenedorTexto a{
+    padding: 0.5%;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#formularioOrador{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.contenedorFlex_formulario{    
+    width: 50%;
+    height: 64%;
+}
+.formulario_titulo{    
+    padding: 2%;
+    text-align: center;
+    margin-top: 10px ;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.formularioOrador_tituloPequeño{
+    padding-bottom: 8px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+.formulario_titulo h2{
+    font-size: 2.3rem;
+}
+.subrayadoPuntitos{
+    border-bottom: 2px dotted black;
+}
+.formulario_titulo P{
+    padding-top: 2%;
+    font-size: 1.2rem;
+}
+.formularioInput{
+    height: 97%;
+    display: flex;
+}
+.cajaForm{    
+    width: 100%;
+    height: 90%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.parrafoForm{
+    padding-top: 1%;
+    font-size: 1rem;
+}
+.inputName{
+    height: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.inputName input{
+    padding: 1%;
+    width: 48%;
+    height: 100%;
+    font-size: 1rem;   
+    border: 1px solid gray;    
+    border-radius: 5px; 
+}
+.text_area{    
+    padding-top: 2%;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;   
+}
+.text_area textarea{
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;  
+}
+.submit{
+    padding-top: 2%;
+} 
+.submit input{
+    background-color: rgb(150, 201, 62) ;
+    width: 100%;
+    height: 5vh;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1.5rem;    
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer{
+    height: 10%;
+    background: linear-gradient(to right, #1c3643, #1c3d4e, #1c4459, #1c4b65, #1d5271);
+}
+.footer_nav_ul{
+    height: 13vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer_nav_ul_li_a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (min-width: 0) and (max-width:991px){
+    .header_contenedorLogo{
+        flex-direction: column;
+    }    
+    .header_nav_ul{
+        flex-direction: column;
+    }
+    .header_section{
+        height: 100vh;
+    }
+    .header_section_parrafo{
+        width: 100%;
+        height: 50%;
+        font-size: 1rem;
+        text-align: justify;
+    } 
+    .header_section_div h1{
+        font-size: 2rem;
+    }
+    .cajaConferencia{
+        width: 100%;
+        height: 10vh;
+        padding-top: 2%;
+    }
+        .main_oradores_cards{
+        flex-direction: column;         
+    }
+    .cards{
+        flex-direction: column;        
+    }
+    .main_sectionPrincipal_contenedorFlexible{
+        flex-direction: column-reverse;
+    }
+    .main_sectionPrincipal_contenedorFlexible_contenedorImg{
+        width: 100%;
+        height: 50vh;
+    }
+    .main_sectionPrincipal_contenedorTexto{
+        width: 100%;
+        height: 50vh;       
+    }
+    #formularioOrador{
+        height: 80vh;        
+    }
+    .footer{
+        height: 40vh;
+    }
+    .footer_nav_ul{
+        margin-top: 5vh;
+        padding-top: 20vh;        
+        flex-direction: column;  
+    }          
+}
