@@ -363,7 +363,7 @@ body{
         flex-direction: column;
     }
     .header_section{
-        height: 100vh;
+        height: 150vh;
     }
     .header_section_parrafo{
         width: 100%;
@@ -379,14 +379,16 @@ body{
         height: 10vh;
         padding-top: 2%;
     }
-        .main_oradores_cards{
-        flex-direction: column;         
-    }
+    .main_oradores_cards{
+        flex-direction: column;              
+    }    
     .cards{
-        flex-direction: column;        
+        flex-direction: column;
+        width: 50%;        
     }
     .main_sectionPrincipal_contenedorFlexible{
         flex-direction: column-reverse;
+        height: 100vh;
     }
     .main_sectionPrincipal_contenedorFlexible_contenedorImg{
         width: 100%;
