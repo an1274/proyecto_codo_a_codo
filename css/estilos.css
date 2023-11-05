@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 1px;
+    margin: 0 1px;
 }
 .itemBlanco{
     color: rgb(246, 247, 242);
@@ -12,8 +12,13 @@ body{
 .itemGris{
     color: rgb(149, 152, 159);
 }
-.itemVerde{
+.itemVerde { 
     color: rgb(39, 167, 70);
+} 
+.formCeleste{
+    background-color: rgb(204, 229, 255);
+    padding: 15px;
+    font-weight: 500;
 }
 .header_navegador{
     padding: 1% 7% 1% 1%;
@@ -67,6 +72,10 @@ body{
 .header_nav_ul_li_a{
     text-decoration: none;
 }
+.nav_verde{
+    color: rgb(39, 167, 70);
+    text-decoration: none;     
+}
 .header_section{
     height: 80vh;
     color: white;
@@ -93,6 +102,10 @@ body{
 }
 .header_section_div h1{
     font-size: 2.5rem;
+}
+.nav-fix{
+    position: fixed;
+    width: 100%;
 }
 .cajaConferencia{
     width: 100%;
@@ -201,6 +214,9 @@ body{
     font-size: 1rem;
     line-height: 1.8;
     text-align: justify center;
+}
+.main{
+    margin-bottom: 20px;
 }
 .main_sectionPrincipal_contenedorFlexible{
     height: 60vh;
@@ -322,12 +338,11 @@ body{
     border-radius: 5px;  
 }
 .submit{
-    padding-top: 2%;
+    padding-top: 2%;    
 } 
-.submit input{
-    background-color: rgb(150, 201, 62) ;
+.submitInput{
     width: 100%;
-    height: 5vh;
+    background-color: rgb(150, 201, 62) ;
     border: 1px solid transparent;
     border-radius: 5px;
     font-size: 1.5rem;    
@@ -355,6 +370,73 @@ body{
     color: white;
     text-decoration: none;
 }
+.changeNav{
+    width: 100px;    
+}
+.grisNav{
+    background-color: rgb(60, 65, 71);
+}
+.navFluid{
+    margin: 3px 100px;
+}
+.animacionBorde_1:hover{
+    background:rgba(0, 0, 255, 0.527);
+    box-shadow: 0 0 5px #215b8b7a, 0 0 25px; 
+}
+.animacionBorde_2:hover{
+    background:#6ca8c9;
+    box-shadow: 0 0 5px #215b8b7a, 0 0 25px;
+}
+.animacionBorde_3:hover{
+    background: orange;
+    box-shadow: 0 0 5px #215b8b7a, 0 0 25px;    
+}
+.botonForm{
+    text-decoration: none;
+    color:#fff;
+    font-family: Arial;
+    font-size: 24px;
+    padding: 10px 30px;
+    background-image: linear-gradient(120deg,#3afe3a,#99fe3aaf);
+    border-radius: 10px;
+    animation: gradient 10s linear infinite;
+    position:relative;
+}
+.botonForm::before{
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: inherit;
+    z-index:-1;
+    top:10px;
+    left:0;
+    filter:blur(30px);
+    opacity:0.9;
+}
+@keyframes gradient{
+            from{
+                filter:hue-rotate(0deg);
+
+            }
+            to{
+                filter: hue-rotate(360deg);
+            }
+        }
+.texto_form h2{
+    padding: 3px;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+}
+.texto_form h1{
+    font-size: 2rem;
+    text-align: center;
+}
+.divBlock{
+    display: block;
+}
 @media screen and (min-width: 0) and (max-width:991px){
     .header_contenedorLogo{
         flex-direction: column;
@@ -363,7 +445,7 @@ body{
         flex-direction: column;
     }
     .header_section{
-        height: 150vh;
+        height: 100vh;
     }
     .header_section_parrafo{
         width: 100%;
@@ -388,7 +470,6 @@ body{
     }
     .main_sectionPrincipal_contenedorFlexible{
         flex-direction: column-reverse;
-        height: 100vh;
     }
     .main_sectionPrincipal_contenedorFlexible_contenedorImg{
         width: 100%;
